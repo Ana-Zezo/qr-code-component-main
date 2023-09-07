@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+    }
+
+    :root {
+      --withe: hsl(0, 0%, 100%);
+      --LightGray: hsl(212, 45%, 89%);
+      --GrayishBlue: hsl(220, 15%, 55%);
+      --DarkBlue: hsl(218, 44%, 22%);
+      --Font-size: 15px;
+      --font-Family: "Outfit";
+      --small-wight: 400;
+      --large-wight: 700;
+
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    /* Desctop Screen */
+    @media (min-width:1440px) {
+      .container {
+        margin: 5% auto;
+        background-color: var(--LightGray);
+        width: 90%;
+        height: 80vh;
+        /* position: relative; */
+        margin: 5% auto;
+        padding: 15px;
+      }
+
+      .content {
+        width: 300px;
+        height: 400px;
+        background-color: var(--withe);
+        border-radius: 10px;
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+        margin: 5% auto;
+        padding: 15px;
+      }
+
+      .container .img {
+        width: 100%;
+        height: 65%;
+        margin-bottom: 10px;
+      }
+
+      .container .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .title {
+        text-align: center;
+        font-size: var(--Font-size);
+        font-weight: var(--large-wight);
+        font-family: var(--font-Family);
+        margin-bottom: 15px;
+        word-spacing: 1px;
+        padding: 5px;
+      }
+
+      p {
+        text-align: center;
+        color: var(--GrayishBlue);
+        font-size: var(--small-wight);
+        font-family: var(--font-Family);
+      }
+
+    }
+
+    /* Mobile Screen */
+    @media (max-width:375px) {
+      .container {
+        background-color: var(--LightGray);
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .content {
+        width: 200px;
+        height: 400px;
+        background-color: var(--withe);
+        border-radius: 10px;
+        margin: 2% auto;
+      }
+
+      .container .img {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 10px;
+      }
+
+      .container .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="img">
+        <img src="images/image-qr-code.png" alt="">
+      </div>
+      <div class="title">Improve your front-end skills by building projects</div>
+      <p class="desc">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ana-Zezo</a>.
+  </div>
+</body>
+
+</html>
